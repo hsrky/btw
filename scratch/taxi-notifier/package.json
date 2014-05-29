@@ -1,0 +1,26 @@
+{
+    "name": "taxi_notifier",
+    "description": "",
+    "version": "0.0.1",
+    "main": "./taxi_notifier.js",
+    "private": true,
+    "author": {
+        "name": "ky lee",
+        "email": "hsrky@hotmail.com"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "default"
+    },
+    "dependencies": {
+        "redis": ">=0.0.0",
+        "sqlite3": ">=2.1.1",
+        "mysql": ">=0.0.0",
+        "node-mysql": ">=0.0.0",
+        "persist": ">=0.2.0",
+        "should": ">=0.0.0",
+        "mocha": ">=0.0.0",
+        "moment": ">=2.6.0",
+        "geoutils": ">=0.1.0"
+    }
+}

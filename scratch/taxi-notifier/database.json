@@ -1,0 +1,21 @@
+{
+  "default": "mysql",
+  "mysql": {
+    "driver"  : "mysql",
+    "host"    : "127.0.0.1",
+    "user"    : "root",
+    "password": "root",
+    "database": "taxi_notifier_052014",
+    "trace"   : true
+  },
+  
+  "mysql-linux": {
+    "driver"  : "mysql",
+    "host"    : "127.0.0.1",
+    "user"    : "root",
+    "password": "root",
+    "database": "taxi_notifier_052014",
+    "trace"   : true,
+    "socketPath": "/var/run/mysqld/mysqld.sock"
+  }
+}
