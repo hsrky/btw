@@ -3,6 +3,9 @@
     "description": "",
     "version": "0.0.1",
     "main": "./taxi_notifier.js",
+    "scripts": {
+        "test": "mocha specs/* -R nyan -u bdd"
+    },
     "private": true,
     "author": {
         "name": "ky lee",

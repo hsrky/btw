@@ -19,3 +19,9 @@ Running test
 ```
 npm test
 ```
+
+or
+
+```
+mocha specs/*
+```
