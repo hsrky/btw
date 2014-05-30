@@ -1,6 +1,8 @@
 taxi_notifier
 ==============
 
+Example using node.js
+
 Setting Up
 -----------
 1. Failed to find way to create database schema in node-persist,
@@ -13,6 +15,12 @@ Setting Up
 Required dependencies
 ---------------------
 Refer [package.json](package.json)
+
+Running the app
+---------------
+```
+node taxi_notifier.js
+```
 
 Running test
 ------------
