@@ -17,7 +17,6 @@
     },
     "dependencies": {
         "redis": ">=0.0.0",
-        "sqlite3": ">=2.1.1",
         "mysql": ">=0.0.0",
         "node-mysql": ">=0.0.0",
         "persist": ">=0.2.0",
