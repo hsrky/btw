@@ -29,7 +29,6 @@ CREATE TABLE `demands` (
   `demand_level` int(11) DEFAULT NULL,
   `timerange_l` varchar(5) COLLATE utf8_unicode_ci DEFAULT NULL,
   `timerange_h` varchar(5) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `weekday` int(11) DEFAULT NULL,
   `weekend` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -91,7 +90,7 @@ CREATE TABLE `taxis` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `plate_number` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `active` int(11) DEFAULT '0',
-  `taxi_location_id` int(11) DEFAULT NULL,
+  `taxilocation_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;

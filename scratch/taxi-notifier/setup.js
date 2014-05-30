@@ -67,7 +67,6 @@ persist.connect(function(err, connection) {
         demand_level: 10,
         timerange_l: '07:00',
         timerange_h: '08:00',
-        weekday: true,
         weekend: false
     }));
 
@@ -75,7 +74,6 @@ persist.connect(function(err, connection) {
         demand_level: 10,
         timerange_l: '11:00',
         timerange_h: '13:00',
-        weekday: false,
         weekend: true
     }));
     

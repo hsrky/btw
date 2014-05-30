@@ -1,5 +1,5 @@
 {
-  "default": "mysql",
+  "default": "mysql-linux",
   "mysql": {
     "driver"  : "mysql",
     "host"    : "127.0.0.1",
@@ -15,7 +15,7 @@
     "user"    : "root",
     "password": "root",
     "database": "taxi_notifier_052014",
-    "trace"   : true,
+    "trace"   : false,
     "socketPath": "/var/run/mysqld/mysqld.sock"
   }
 }
