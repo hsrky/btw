@@ -9,6 +9,7 @@
 var hireDemands = require('./utils/HireDemands'),
     hireSources = require('./utils/HireSources'),
     redisManager = require('redis-client-manager'),
+    notifyEvent = new (require('events').EventEmitter), // notify taxi event
     redisClient = redisManager.getClient(),
     util = require('util'),     // nodejs standard util library
     moment = require('moment'); // datetime library
@@ -21,7 +22,11 @@ var currentMoment = new moment(),
     nextSlot = nextSlot.format('HH:mm').toString(), // we only need the hour and minutes in string, eg. "14:30"
     HIGH_DEMAND_LVL = 10,                           // we want places with highest demand only
     isWeekend = false;
-    
+
+notifyEvent.on('notify_taxi', function(taxi_id) {
+    redisClient.lpush('prediction', taxi_id);
+});
+
 console.log(util.format('INPUT: Today is "%s", and next slot is: "%s"', dayOfToday, nextSlot));
 
 if(dayOfToday === 0 || dayOfToday === 6) {
@@ -51,7 +56,7 @@ hireDemands.getAllLocations(HIGH_DEMAND_LVL, nextSlot, isWeekend, function(locat
             for(var j = 0, totalTaxis = taxis.length; j < totalTaxis; ++j) {
                 var taxi = taxis[j];
                 console.log(util.format(' -> Need to notify taxi: "%s" (id=%s)', taxi.number, taxi.id));
-                redisClient.lpush('prediction', taxi.id);
+                notifyEvent.emit('notify_taxi', taxi.id);
             }
         });
     }
