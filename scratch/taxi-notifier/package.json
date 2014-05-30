@@ -21,6 +21,7 @@
         "should": ">=0.0.0",
         "mocha": ">=0.0.0",
         "moment": ">=2.6.0",
-        "geoutils": ">=0.1.0"
+        "geoutils": ">=0.1.0",
+        "redis-client-manager": ">=0.0.0"
     }
 }
