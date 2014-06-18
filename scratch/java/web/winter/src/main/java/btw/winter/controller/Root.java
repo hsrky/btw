@@ -7,8 +7,10 @@
 package btw.winter.controller;
 
 import btw.winter.object.Greeting;
+import btw.winter.object.MessageData;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,7 +41,8 @@ public class Root {
     }
 
     @RequestMapping(value="/tleaf", method=RequestMethod.GET)
-    public String tleaf() {
+    public String tleaf(ModelMap model) {
+        model.addAttribute("title", "This is Thymeleaf message!");
         return "tleaf";
     }
     
