@@ -5,7 +5,6 @@ import tornado.websocket
 import tornado.ioloop
 import tornado.web
 
-import daemon
 import os, binascii
 
 import hashlib
@@ -162,11 +161,10 @@ application = tornado.web.Application([
 
 # entry point
 if __name__ == "__main__":
-    # daemon
+#    import daemon
 #    log = open('tornado.' + str(port) + '.log', 'a+')
 #    ctx = daemon.DaemonContext(stdout=log, stderr=log,  working_directory='.')
 #    ctx.open()
-    # daemon
     port = 8889
     application.listen(port)
     print 'Messaging service starting at port {0}'.format(port)
