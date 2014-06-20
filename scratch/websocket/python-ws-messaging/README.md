@@ -19,9 +19,9 @@ $> python backend/messaging.py
 
 ### 2. Client ###
 ```
-$> cd web && python -m SimpleHTTPServer 8000
+$> cd web && python -m SimpleHTTPServer 8889
 ```
-Access page via: `http://<BACKEND_IP>:8000/messaging.html`, and change IP to <BACKEND_IP> before connect.
+Access page via: `http://<BACKEND_IP>:8889/messaging.html`, and change IP to <BACKEND_IP> before connect.
 
 Code structure
 --------------
