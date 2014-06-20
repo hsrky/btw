@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="javascript/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/lib/tweet-templ.js"></script>
+        <script type="text/javascript" src="javascript/messaging.js"></script>
+        <link rel="stylesheet/less" type="text/css" href="/less/messaging.less" />
+        <script type="text/javascript">
+        less = {
+                env: "development", // "production", "development" // TODO: change to "production" once ready.
+                async: false,
+                fileAsync: false,
+
+                poll: 1000,
+                functions: {},
+                dumpLineNumbers: "Comments",
+                relativeUrls: false
+            };
+        </script>
+        <script type="text/javascript" src="javascript/lib/less.min.js"></script>
+
+    </HEAD>
+    <BODY>
+        <div class="top"></div>
+        <div class="middle">
+            <div class="left-panel">
+                <div class="user-list-title">Active Users: </div>
+                <ul class="user-list">
+                    <li id="aaa" class="user">User1</li>
+                </ul>
+            </div>
+            
+            <div class="left">
+                <div class="user-list-title">Active Users: </div>
+                <ul class="user-list">
+                </ul>
+            </div>
+            
+            <div class="right">
+                <div class="conversation">
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom">
+            <div class="connect">
+                <label>IP: <input class="ip" type="text" value="192.168.1.10" maxlength="30" title="e.g: 127.0.0.1"/></label>
+                <label>Port: <input class="port" type="text" value="8889" maxlength="5" title="e.g: 8889"/></label>
+                <label style="margin-left: 24px">Name: <input type="text" value="" class="name" /></label>
+                <input class="btn-connect" type="button" value="Connect" />
+            </div>
+            
+            <div class="messaging">
+                <div class="input-area">
+                    <div class="btn-container">
+                        <input class="btn-send" type="button" value="Send" disabled="disabled" />
+                    </div>
+                    <div class="text-container">
+                        <textarea class="text"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </BODY>
+</HTML>
