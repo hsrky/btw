@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AppPortfolio"
+    android:background="@color/my_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/appHeader"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appSpotify"
+        android:id="@+id/button"
+        android:background="@color/my_button_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appScores"
+        android:id="@+id/button2"
+        android:background="@color/my_button_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appLib"
+        android:id="@+id/button3"
+        android:background="@color/my_button_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appBigger"
+        android:id="@+id/button4"
+        android:background="@color/my_button_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appReader"
+        android:id="@+id/button5"
+        android:background="@color/my_button_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/appCapstone"
+        android:id="@+id/button6"
+        android:background="@color/my_highlight_button_color"
+        android:layout_gravity="center_horizontal"
+        android:onClick="displayToast" />
+</LinearLayout>
